@@ -31,7 +31,10 @@ gulp.task('js',function(){
 
 gulp.task('sass',function(){
    gulp.src(src.sass)
-       .pipe(sass().on('error', sass.logError))
+       .pipe(
+            sass({
+                outputStyle: 'compressed'
+            }).on('error', sass.logError))
        .pipe(concat('suid-app.css'))
        .pipe(gulp.dest('src/css/'));
 });
@@ -45,4 +48,6 @@ gulp.task('dev',function(){
     gulp.task('sass');
 });
 
-
+gulp.task('watch',function(){
+   gulp.watch('src/**/*.scss',['sass'])
+});

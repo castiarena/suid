@@ -1,3 +1,19 @@
-body{
-  font-family:Arial,Helvetica, sans-serif;
-}
+/*---------> Dependencias <---------*/
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+
+
+/*---------> Includes <---------*/
+
+@import "variables";
+@import "tipo";
+@import "nav";
+@import "footer";
+@import "header";
+

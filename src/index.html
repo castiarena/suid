@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>suid - concepto visual</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/suid-app.css">
+
 </head>
 <body data-ng-controller="homeController">
 
-<h1>{{ texto }}</h1>
+<header class="header header-fixed">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nav-suid-overinfo">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1>suid</h1>
+            </div>
+            <div class="col-md-8 text-right">
+                <nav class="nav-suid">
+                    <ul>
+                        <li><a href="#concepto">Concepto</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#clientes">Clientes</a></li>
+                        <li><a href="#clientes">Cine</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <div class="container">
+        <h1>{{ texto }}</h1>
+
+    </div>
+</main>
+
+<footer>
+
+</footer>
 
 <script src="js/suid.js"></script>
 </body>
