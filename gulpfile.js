@@ -45,9 +45,10 @@ gulp.task('dev',function(){
        .pipe(concat('suid.js'))
        .pipe(gulp.dest('src/js/'));
 
-    gulp.task('sass');
 });
 
 gulp.task('watch',function(){
-   gulp.watch('src/**/*.scss',['sass'])
+    gulp.watch('src/**/*.js',['dev']);
+
+    gulp.watch('src/**/*.scss',['sass']);
 });
